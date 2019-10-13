@@ -29,6 +29,7 @@ Make sure nodeJS folder is cloned
 Navigate to nodeJS folder and run "nodemon index.js"
 
 Launch http://localhost:3000/employees to check for employee data
+Launch http://localhost:3000/admin to check for admin data
 
 ## Further help
 
@@ -40,4 +41,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ##Employee View
 
-![alt text](https://github.com/vsundeept/fullstackchallenge/blob/master/outputScreens/employeeView.jpg)
+![alt text](https://github.com/vsundeept/fullstackchallenge/blob/master/outputScreens/empView.jpg)
