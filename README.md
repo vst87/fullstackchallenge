@@ -1,39 +1,33 @@
-# Full Stack Developer Challenge
-This is an interview challengs. Please feel free to fork. Pull Requests will be ignored.
+# OrgApp
 
-## Requirements
-Design a web application that allows employees to submit feedback toward each other's performance review.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
-*Partial solutions are acceptable.*  It is not necessary to submit a complete solution that implements every requirement.
+## Development server
 
-### Admin view
-* Add/remove/update/view employees
-* Add/update/view performance reviews
-* Assign employees to participate in another employee's performance review
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Employee view
-* List of performance reviews requiring feedback
-* Submit feedback
+## Build
 
-## Challenge Scope
-* High level description of design and technologies used
-* Server side API (using a programming language and/or framework of your choice)
-  * Implementation of at least 3 API calls
-  * Most full stack web developers at PayPay currently use Java, Ruby on Rails, or Node.js on the server(with MySQL for the database), but feel free to use other tech if you prefer
-* Web app
-  * Implementation of 2-5 web pages using a modern web framework (e.g. React or Angular) that talks to server side
-    * This should integrate with your API, but it's fine to use static responses for some of it 
-* Document all assumptions made
-* Complete solutions aren't required, but what you do submit needs to run.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## How to complete this challenge
-* Fork this repo in github
-* Complete the design and code as defined to the best of your abilities
-* Place notes in your code to help with clarity where appropriate. Make it readable enough to present to the PayPay interview team
-* Complete your work in your own github repo and send the results to us and/or present them during your interview
+## Download Dependencies
 
-## What are we looking for? What does this prove?
-* Assumptions you make given limited requirements
-* Technology and design choices
-* Identify areas of your strengths
-* This is not a pass or fail test, this will serve as a common ground that we can deep dive together into specific issues
+Install npm packages using 'npm install' command from both angularApp and nodeJS Project Folder.
+
+Run `npm install -g @angular/cli` and `npm install` to download all the dependencies related to folder repo
+
+## Download and Install MongoDB.
+
+Create a file with the below lines of code and save it MongoDB.bat file. Double click to run the mongo db
+
+cd C:\Program Files\MongoDB\Server\4.2\bin
+mongod.exe --dbpath C:\Users\FullStackEngineerChallenge\mongo-data
+
+## To start NodeJS
+Make sure nodeJS folder is cloned
+
+Navigate to nodeJS folder and run "nodemon index.js"
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
