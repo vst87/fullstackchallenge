@@ -28,6 +28,8 @@ Make sure nodeJS folder is cloned
 
 Navigate to nodeJS folder and run "nodemon index.js"
 
+Launch http://localhost:3000/employees to check for employee data
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
