@@ -33,3 +33,11 @@ Launch http://localhost:3000/employees to check for employee data
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##Admin View 
+
+![alt text](https://github.com/vsundeept/fullstackchallenge/blob/master/outputScreens/adminView.jpg)
+
+##Employee View
+
+![alt text](https://github.com/vsundeept/fullstackchallenge/blob/master/outputScreens/employeeView.jpg)
