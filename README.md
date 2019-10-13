@@ -1,5 +1,7 @@
 # OrgApp
 
+This project is developed using the MEAN (MongoDB, Express, Angular, NodeJS) stack. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
 ## Development server
