@@ -28,8 +28,7 @@ Make sure nodeJS folder is cloned
 
 Navigate to nodeJS folder and run "nodemon index.js"
 
-Launch http://localhost:3000/employees to check for employee data
-Launch http://localhost:3000/admin to check for admin data
+Launch http://localhost:3000/employees to check for employee data and http://localhost:3000/admin to check for admin data
 
 ## Further help
 
