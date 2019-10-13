@@ -1,1 +1,105 @@
-<p>admin works!</p>
+<div class="main col s12">
+        <div class="row">
+          <div class="col s5 emp-form left">
+            <h5>
+             Admin Form
+            </h5>
+            <form #adminForm="ngForm" (ngSubmit)="onSubmit(adminForm)">
+              <input
+                type="hidden"
+                name="_id"
+                #_id="ngModel"
+                [(ngModel)]="adminService.selectedAdmin._id"
+              />
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    type="text"
+                    name="name"
+                    #name="ngModel"
+                    [(ngModel)]="adminService.selectedAdmin.name"
+                    holder="Enter full name"
+                    required
+                  />
+                  <label
+                    >Admin Name :
+                    <label class="red-text">*</label>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    type="text"
+                    name="location"
+                    #name="ngModel"
+                    [(ngModel)]="adminService.selectedAdmin.location"
+                    placeholder="Eg : Tokyo"
+                  />
+                  <label>Location :</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input
+                    type="text"
+                    name="address"
+                    #name="ngModel"
+                    [(ngModel)]="adminService.selectedAdmin.address"
+                    placeholder="Eg: Japan"
+                  />
+                  <label>Address :</label>
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="input-field col s12">
+                  <button
+                    class="btn btn-custom right"
+                    type="button"
+                    (click)="resetForm(adminForm)"
+                  >
+                    Reset
+                  </button>
+                  <button
+                    class="btn right"
+                    type="submit"
+                    [disabled]="!adminForm.valid"
+                  >
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col s6 emp-list right">
+            <h5>
+              Admin List
+            </h5>
+            <table class="responsive-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Location</th>
+                  <th>Address</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr *ngFor="let adminData of adminService.admin">
+                <td>{{ adminData.name }}</td>
+                <td>{{ adminData.location }}</td>
+                <td>{{ adminData.address }}</td>
+                <td>
+                  <a class="action-btn" (click)="onEdit(adminData)">
+                    <i class="material-icons">edit</i>
+                  </a>
+                  <a class="action-btn" (click)="onDelete(adminData._id, adminForm)">
+                    <i class="material-icons">delete</i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      

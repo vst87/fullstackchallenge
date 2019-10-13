@@ -2,7 +2,6 @@ const express = require('express');
 var router = express.Router();
 
 var ObjectId = require('mongoose').Types.ObjectId;
-
 var {Admin} = require('../models/admin'); 
 
 // => localhost:3000/admin/
@@ -46,9 +45,8 @@ router.put('/:id', (req, res) => {
 
     var admin = {
         name: req.body.name,
-        position: req.body.position,
-        office: req.body.office,
-        salary: req.body.salary,
+        location: req.body.location,
+        address: req.body.address
     };
     Admin.findByIdAndUpdate(req.params.id, { $set: admin }, { new: true }, (err, doc) => {
         if (!err) { res.send(doc); }

@@ -6,4 +6,4 @@ var Admin = mongoose.model('Admin', {
     address: {type :String}
 });
 
-module.exports = {Admin};
+module.exports = { Admin };
